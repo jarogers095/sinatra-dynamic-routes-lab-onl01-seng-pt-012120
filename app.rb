@@ -25,6 +25,10 @@ class App < Sinatra::Base
   end
   
   get "/:operation/:number1/:number2" do 
-    Math.send("#{params[:operation]}", params[:number1], params[:number2]).to_s
+    case params[:operation]
+    when "add"
+      return
+    when "subtract"
+        
   end
 end
