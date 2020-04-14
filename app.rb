@@ -14,7 +14,7 @@ class App < Sinatra::Base
     
     1..params[:number].to_i.map do
       params[:phrase]
-    end.join
+    end.join(" ")
       
   end
   
